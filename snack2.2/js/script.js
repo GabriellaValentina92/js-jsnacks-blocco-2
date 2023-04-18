@@ -4,14 +4,24 @@
 // e da queste vuole generare una falsa lista di invitati con nome e cognome.
 
 let Name = ['Anna', 'Marco', 'Giulio', 'Antonio', 'Elena', 'Piera'];
-let Last_name = ['Foglietta', 'Russo', 'Ranno', 'Coniglio', 'Barretta', 'Giordano'];
-
-let False_Name = Name[Math.floor(Math.random() * Name.lenght)];
-console.log(False_Name)
-let False_lastname = Last_name[Math.floor(Math.random() * Last_name.lenght)];
-console.log(False_lastname)
+let lastName = ['Foglietta', 'Russo', 'Ranno', 'Coniglio', 'Barretta', 'Giordano'];
 
 
-for ( let i = 0; i < Name.lenght, Last_name.lenght; i++){
+let falseName = Name[Math.floor(Math.random() * Name.length)];
+let falseLastName = lastName[Math.floor(Math.random() * lastName.length)];
+
+let falseList = [];
+
+for ( let i = 0; i < Name.length && i < lastName.length; i++){
+    
+    falseName = Name[Math.floor(Math.random() * Name.length)];
+    // console.log(falseName)
+    falseLastName = lastName[Math.floor(Math.random() * lastName.length)];
+    // console.log(falseLastName)
+
+    const listName = falseName.concat(falseLastName)
+
+    falseList.push(listName);
+    console.log(falseList)
     
 }
