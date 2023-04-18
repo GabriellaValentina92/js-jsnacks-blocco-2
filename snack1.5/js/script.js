@@ -4,14 +4,14 @@
 
 
 let OddNum = [];
-let size = 6;
+let Size = 6;
 
 
-for(let i=0; i<size; i++) {
+for(let i=0; i<=Size; i++) {
 	let Num = parseInt(prompt('inserisci un numero'));
 
     if (Num % 2 == 1){
-        OddNum[i] = Num;
+        OddNum.push(Num);
     }
 }
 
